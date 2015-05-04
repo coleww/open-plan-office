@@ -132,7 +132,7 @@ var loadSample = require('./loadSample')
 var ac = new AudioContext()
 
 var player = SamplePlayer(ac)
-loadSample(ac, '/slack.ogg', player)
+loadSample(ac, './slack.ogg', player)
 
 var panner = ac.createPanner()
 
