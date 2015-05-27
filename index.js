@@ -36,6 +36,17 @@ window.setInterval(function(){
   document.querySelector('img:nth-child('+ i +')').style.opacity = 1
 }, 5000)
 
+var loop = SamplePlayer(ac)
+loadSample(ac, './audio/office.ogg', loop, true)
+loop.loop = true
+
+var gain = ac.createGain()
+gain.gain.setValueAtTime(0, ac.currentTime)
+gain.gain.linearRampToValueAtTime(0.1, ac.currentTime + 3)
+
+loop.connect(gain)
+gain.connect(ac.destination)
+
 window.setTimeout(function(){
   document.querySelector('h1').style.opacity = 0
   slack()

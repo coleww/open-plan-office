@@ -1,4 +1,4 @@
-module.exports = function(ac, path, node){
+module.exports = function(ac, path, node, loop){
 
   var request = new XMLHttpRequest();
   request.open('GET', path, true);
@@ -12,6 +12,10 @@ module.exports = function(ac, path, node){
 
   function onBufferLoaded(buffer) {
     node.buffer = buffer;
+    if(loop){
+      console.log('WHEE')
+      node.start()
+    }
   }
 
   function onBufferLoadError(err) {
