@@ -1,0 +1,33 @@
+{
+  "name": "open-plan",
+  "version": "1.0.0",
+  "description": "an open-plan office simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "lol",
+    "build": "browserify index.js -o bundle.js",
+    "watch": "watchify index.js -o bundle.js --debug --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coleww/open-plan-office.git"
+  },
+  "keywords": [
+    "open-plan",
+    "office",
+    "simulator"
+  ],
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coleww/open-plan-office/issues"
+  },
+  "homepage": "https://github.com/coleww/open-plan-office",
+  "dependencies": {
+    "openmusic-sample-player": "^1.4.3"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.1",
+    "watchify": "^3.2.1"
+  }
+}
