@@ -39,3 +39,7 @@ window.setInterval(function(){
   if(++i > 5) i = 1
   document.querySelector('img:nth-child('+ i +')').style.opacity = 1
 }, 5000)
+
+window.setTimeout(function(){
+  document.querySelector('h1').style.opacity = 0
+}, 5000)
