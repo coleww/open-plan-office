@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+h1 {
+  position: absolute;
+  font-size: 150px;
+  transition: opacity 1s ease-in-out;
+}
