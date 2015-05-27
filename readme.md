@@ -1,9 +1,7 @@
-OPEN PLAN OFFICE
+Open-Plan Office Simulator 2015™
 --------------------
 
-plays the default slack notification sound from randomly panned points at random intervals.
-
---------------------------------------------------
+[how 2 be a good person](https://slack.zendesk.com/hc/en-us/articles/201355156-Desktop-notifications)
 
 ```
     Although many nineteenth century philosophers developed the concepts of existentialism,
@@ -12,10 +10,13 @@ plays the default slack notification sound from randomly panned points at random
     for this philosophy. There are only four characters: the VALET, GARCIN, ESTELLE,
     and INEZ and the entire play takes place in a drawing room, Second Empire style, with a
     massive bronze ornament on the mantelpiece. However the piece contains essential germs
-    of existentialist thought such as "Hell is other people." As you read the play, put yourself
-    in that drawing room with two people you hate most in the world. -http://archive.org/stream/NoExit/NoExit_djvu.txt
+    of existentialist thought such as "Hell is other people."
+
+    As you read the play,
+    put yourself
+    in that drawing room
+    with two people
+    you hate most in the world.
+
+    -http://archive.org/stream/NoExit/NoExit_djvu.txt
 ```
-
----------------------------------------------------
-
-[how 2 be a good person](https://slack.zendesk.com/hc/en-us/articles/201355156-Desktop-notifications)
