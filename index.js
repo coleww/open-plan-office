@@ -28,10 +28,6 @@ function slack(){
   }, 500 + Math.random() * 3000)
 }
 
-window.setTimeout(function(){
-  slack()
-}, 3000)
-
 // ZZOMG CAROUSEL
 var i = 1
 window.setInterval(function(){
@@ -42,4 +38,5 @@ window.setInterval(function(){
 
 window.setTimeout(function(){
   document.querySelector('h1').style.opacity = 0
+  slack()
 }, 5000)
