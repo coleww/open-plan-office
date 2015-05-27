@@ -1,3 +1,6 @@
+var fullScreen = require('./fullScreen')
+fullScreen(document.getElementsByTagName('img'))
+
 var SamplePlayer = require('openmusic-sample-player')
 var loadSample = require('./loadSample')
 
@@ -27,5 +30,12 @@ function slack(){
 
 window.setTimeout(function(){
   slack()
+}, 3000)
 
-}, 1000)
+// ZZOMG CAROUSEL
+var i = 1
+window.setInterval(function(){
+  document.querySelector('img:nth-child('+ i +')').style.opacity = 0
+  if(++i > 5) i = 1
+  document.querySelector('img:nth-child('+ i +')').style.opacity = 1
+}, 5000)
