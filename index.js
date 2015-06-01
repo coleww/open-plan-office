@@ -2,12 +2,14 @@ var fullScreen = require('./fullScreen')
 fullScreen(document.getElementsByTagName('img'))
 
 var SamplePlayer = require('openmusic-sample-player')
-var loadSample = require('./loadSample')
+var loadSample2Buff = require('load-sample-2-buff')
 
 var ac = new AudioContext()
 
 var player = SamplePlayer(ac)
-loadSample(ac, './audio/slack.ogg', player)
+loadSample2Buff(ac, './audio/slack.ogg', function(buffer){
+  player.buffer = buffer
+})
 
 var panner = ac.createPanner()
 
@@ -37,7 +39,10 @@ window.setInterval(function(){
 }, 5000)
 
 var loop = SamplePlayer(ac)
-loadSample(ac, './audio/office.ogg', loop, true)
+loadSample2Buff(ac, './audio/office.ogg', function(buffer){
+  loop.buffer = buffer
+  loop.start()
+})
 loop.loop = true
 
 var gain = ac.createGain()

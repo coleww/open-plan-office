@@ -23,11 +23,10 @@
     "url": "https://github.com/coleww/open-plan-office/issues"
   },
   "homepage": "https://github.com/coleww/open-plan-office",
-  "dependencies": {
-    "openmusic-sample-player": "^1.4.3"
-  },
   "devDependencies": {
+    "openmusic-sample-player": "^1.4.3",
     "browserify": "^10.2.1",
+    "load-sample-2-buff": "^1.0.1",
     "watchify": "^3.2.1"
   }
 }
