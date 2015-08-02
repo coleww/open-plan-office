@@ -1,5 +1,5 @@
-var fullScreen = require('./fullScreen')
-fullScreen(document.getElementsByTagName('img'))
+var fullHouse = require('full-house')
+fullHouse(document.getElementsByTagName('img'))
 
 var SamplePlayer = require('openmusic-sample-player')
 var loadSample2Buff = require('load-sample-2-buff')
